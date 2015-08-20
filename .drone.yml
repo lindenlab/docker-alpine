@@ -8,3 +8,4 @@ script:
   - ./build versions/lindenlab-3.2/options
   - ./build test versions/lindenlab-3.2/options
   - ./build push versions/lindenlab-3.2/options
+
