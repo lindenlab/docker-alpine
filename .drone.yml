@@ -2,7 +2,8 @@ image: registry.docker/buildpack-deps:scm
 volumes:
   - /var/run/docker.sock
 script:
-  - mkdir -p /var/tmp/deps; curl -sSL -o /var/tmp/deps/bats_v0.4.0.tar.gz https://github.com/sstephenson/bats/archive/v0.4.0.tar.gz; fi
+  - mkdir -p /var/tmp/deps
+  - curl -sSL -o /var/tmp/deps/bats_v0.4.0.tar.gz https://github.com/sstephenson/bats/archive/v0.4.0.tar.gz
   - tar -xf /var/tmp/deps/bats_v0.4.0.tar.gz
   - bats-0.4.0/install.sh /usr/local
   - ./build versions/lindenlab-3.2/options
