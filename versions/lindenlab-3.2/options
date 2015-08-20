@@ -1,0 +1,5 @@
+export RELEASE="v3.2"
+export MIRROR="http://dl-4.alpinelinux.org/alpine"
+export BUILD_OPTIONS="-s -c -t UTC -r $RELEASE -m $MIRROR"
+export TAGS="registry.docker/alpine:3.2 registry.docker/alpine:3.2.3 registry.docker/alpine:latest"
+export PUSH_IMAGE="true"
